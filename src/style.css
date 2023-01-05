@@ -16,11 +16,11 @@ header {
   background-position: center;
   background-size: 1400px 500px;
   color: white;
+  font-family: var(--primary-font);
   text-align: center;
 }
 
 header h1 {
-  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 96px;
   line-height: 1;
@@ -28,7 +28,6 @@ header h1 {
   opacity: 90%;
 }
 header h2 {
-  font-family: var(--primary-font);
   font-weight: 400;
   font-size: 40px;
   line-height: 1.5;
@@ -36,7 +35,6 @@ header h2 {
   opacity: 90%;
 }
 header h3 {
-  font-family: var(--primary-font);
   font-weight: 900;
   font-size: 24px;
   line-height: 1.5;
@@ -62,24 +60,29 @@ header a {
 }
 footer {
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(
+      rgba(84, 84, 84, 0.9),
+      rgba(57, 57, 57, 0.9)
+    ),
     url("../images/Joan_Jett_and_The_Blackhearts_@_Lollapalooza_Brazil_2012.jpg");
   background-position: center;
-  background-size: 1400px 500px;
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  font-family: var(--secondary-font);
   padding: 100px 0;
 }
 footer h3 {
+  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
 }
 
 footer p {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-  opacity: 90%;
-  margin-right: 20px;
   line-height: 24px;
+  margin-right: 20px;
 }
 
 footer ul {
@@ -94,8 +97,6 @@ footer li {
 
 footer a {
   color: white;
-  opacity: 90%;
-  text-decoration: none;
 }
 
 .container {
@@ -104,7 +105,7 @@ footer a {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 @media (max-width: 960px) {
@@ -122,5 +123,12 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
