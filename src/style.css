@@ -61,6 +61,7 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   background: white;
+  border-radius: 4px;
 }
 main {
   background-color: white;
@@ -171,6 +172,7 @@ footer a {
   text-decoration: none;
   text-transform: uppercase;
   background: rgb(199, 199, 199);
+  border-radius: 4px;
 }
 .card {
   background: white;
@@ -184,7 +186,7 @@ footer a {
   padding: 0 30px 30px;
 }
 .full-lyrics-btn {
-  border-radius: 12px;
+  border-radius: 4px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 15px;
